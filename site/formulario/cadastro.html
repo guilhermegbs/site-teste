@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="../css/header.css"> 
+    <link rel="stylesheet" href="../css/footer.css"> 
+    <link rel="stylesheet" href="../css/cadastro.css"> 
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | BikeCicle</title>
+</head>
+<body>
+    <header>
+        <div id="LogoBike">
+            <img src="../assets/Lyn 2.png" alt="Logo da Bike" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="#">Sobre Nos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cadastro</h1>
+        <form action="#" method="post">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex: João da Silva" required><br>
+        
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required><br>
+        
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required><br>
+        
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" pattern="\(\d{2}\) \d{5}-\d{4}" required><br>
+        
+            <label for="data_nascimento">Data de nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+        
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero" required>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select><br>
+        
+            <label for="termos">
+                <input type="checkbox" id="termos" name="termos" required>
+                Aceito os <a href="#" target="_blank">termos e condições</a>
+            </label><br>
+            
+            
+        
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p>Já tem uma conta? <a href="login.html">Faça Login</a></p>
+        
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="./assets/Lyn 2.png" alt="Logo da Bike" class="logo-img">
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="footer-list">
+            <li><h3>Blog</h3></li>
+            <li><a href="#" class="footer-link">Tech</a></li>
+            <li><a href="#" class="footer-link">Adventures</a></li>
+            <li><a href="#" class="footer-link">Music</a></li>
+        </ul>
+
+        <ul class="footer-list">
+            <li><h3>Products</h3></li>
+            <li><a href="#" class="footer-link">App</a></li>
+            <li><a href="#" class="footer-link">Desktop</a></li>
+            <li><a href="#" class="footer-link">Cloud</a></li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>Subscribe</h3>
+            <p>Enter your e-mail to get notified about our news solutions</p>
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="footer_copyrigth">
+            &#169 2024 all rights reserved
+        </div>
+    </footer>
+    
+</body>
+</html>
