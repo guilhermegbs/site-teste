@@ -1,0 +1,77 @@
+           <AllowRemoteDownload>true</AllowRemoteDownload>
+            <ResolutionMode>RawContent</ResolutionMode>
+            <ResolutionDepth>1</ResolutionDepth>
+            <CacheResults>false</CacheResults>
+        </DefaultResolution>
+<!--
+        <URLSpecificResolution>
+            <URLPrefix>http://inspire.ec.europa.eu/codelist</URLPrefix>
+            <HTTPHeader>
+                <Name>Accept</Name>
+                <Value>application/x-iso19135+xml</Value>
+            </HTTPHeader>
+            <HTTPHeader>
+                <Name>Accept-Language</Name>
+                <Value>en</Value>
+            </HTTPHeader>
+            <AllowRemoteDownload>true</AllowRemoteDownload>
+            <ResolutionMode>FieldsFromXPath</ResolutionMode>
+            <ResolutionDepth>1</ResolutionDepth>
+            <CacheResults>true</CacheResults>
+            <Field>
+                <Name>name</Name>
+                <Type>string</Type>
+                <XPath>RE_RegisterItem/name/gco:CharacterString</XPath>
+            </Field>
+            <Field>
+                <Name>definition</Name>
+                <Type>string</Type>
+                <XPath>RE_RegisterItem/definition/gco:CharacterString</XPath>
+            </Field>
+        </URLSpecificResolution>
+-->
+        <ResolveInternalXLinks>true</ResolveInternalXLinks>
+    </XLinkResolution>
+
+    <IgnoredXPaths>
+        <WarnIfIgnoredXPathFoundInDocInstance>true</WarnIfIgnoredXPathFoundInDocInstance>
+        <Namespaces>
+            <Namespace prefix="gml" uri="http://www.opengis.net/gml"/>
+            <Namespace prefix="gml32" uri="http://www.opengis.net/gml/3.2"/>
+            <Namespace prefix="swe" uri="http://www.opengis.net/swe/2.0"/>
+        </Namespaces>
+        <XPath warnIfIgnoredXPathFoundInDocInstance="false">gml:boundedBy</XPath>
+        <XPath warnIfIgnoredXPathFoundInDocInstance="false">gml32:boundedBy</XPath>
+        <XPath>gml:priorityLocation</XPath>
+        <XPath>gml32:priorityLocation</XPath>
+        <XPath>gml32:descriptionReference/@owns</XPath>
+        <XPath>@xlink:show</XPath>
+        <XPath>@xlink:type</XPath>
+        <XPath>@xlink:role</XPath>
+        <XPath>@xlink:arcrole</XPath>
+        <XPath>@xlink:actuate</XPath>
+        <XPath>@gml:remoteSchema</XPath>
+        <XPath>@gml32:remoteSchema</XPath>
+        <XPath>swe:Quantity/swe:extension</XPath>
+        <XPath>swe:Quantity/@referenceFrame</XPath>
+        <XPath>swe:Quantity/@axisID</XPath>
+        <XPath>swe:Quantity/@updatable</XPath>
+        <XPath>swe:Quantity/@optional</XPath>
+        <XPath>swe:Quantity/@id</XPath>
+        <XPath>swe:Quantity/swe:identifier</XPath>
+        <!-- <XPath>swe:Quantity/@definition</XPath> -->
+        <XPath>swe:Quantity/swe:label</XPath>
+        <XPath>swe:Quantity/swe:nilValues</XPath>
+        <XPath>swe:Quantity/swe:constraint</XPath>
+        <XPath>swe:Quantity/swe:quality</XPath>
+    </IgnoredXPaths>
+
+    <!-- Section for GMLAS writer config -->
+    <WriterConfig>
+        <IndentationSize>2</IndentationSize>
+        <Comment/>
+        <LineFormat>NATIVE</LineFormat>
+        <SRSNameFormat>OGC_URL</SRSNameFormat>
+        <Wrapping>WFS2_FEATURECOLLECTION</Wrapping>
+        <!-- <Timestamp></Timestamp> -->
+        <WFS20SchemaLocation>http://sc
